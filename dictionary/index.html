@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    
+</head>
+<body>
+    <div id="pagecontainer">
+
+    <div class="header">
+
+        <div class="name">
+      <h3> English</br> Dictionary </h3> 
+        </div>
+           <div>
+            <form>
+                 <input type="text" id="searchbox" name="searchbox" placeholder="search here...">
+                 <button id="clearbtn" type="reset">&times;</button>
+            </form>
+            <button id="searchbtn" onclick="search()">&#x1F50E;&#xFE0E;</button>
+        </div>
+    </div>
+
+    <div class="sideWordbox">
+        <button id="Addbtn">Add</button>
+        <ul id="sidewords">
+           <li>happy</li>
+        </ul>
+    </div>
+
+    <div class="descriptionWrapper">
+        <button id="editbtn"> &#x270E;</button>
+        <button id='deletebtn'> &#x2421;</button>
+        <h2 id="word"></h2>
+        <h3 id= "defof">Defination of <a id='worddef'></a> </h3>
+        <p id="description"> </p>
+        
+    </div>
+    <script src="index.js"></script>
+</div>
+</body>
+</html>
