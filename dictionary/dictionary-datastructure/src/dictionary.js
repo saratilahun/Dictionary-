@@ -1,20 +1,17 @@
 import React, {useState} from 'react';
 import './dictionary.css';
-
+import AutoComplete from './autocomplete';
 export default function Dictionary(){
-
+   
     return(
         <div className= 'pagecontainer'>
+           
             <div className='header'>
             <div className="name">
              <h3> English <br /> Dictionary </h3> 
              </div>
               <div>
-            <form>
-                
-                 <input type="text" className="searchbox" name="searchbox" placeholder="search here..."/>
-                 <button className="clearbtn" type="reset">&times;</button>
-            </form>
+            
                 <button className="searchbtn" >&#x1F50E;&#xFE0E;</button>
               </div>
             </div>
@@ -34,7 +31,9 @@ export default function Dictionary(){
                 <p className="description"> </p>
                 
             </div>
-
+            <div className="searchbox">
+            <AutoComplete/>
+            </div>
         </div>
         
 
